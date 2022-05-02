@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 2em;
     background-color: lightyellow;
 }
 
@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-columns: 1rem 8rem;
     grid-template-areas: 
-    "spine title"
+    "spine cover"
     "footer footer";
 }
 
@@ -16,8 +16,8 @@ body {
     border: 0.1rem solid black;
 }
 
-.book-title {
-    grid-area: title;
+.book-cover {
+    grid-area: cover;
     background-color: lightgreen;
     height: 7em;
     display: flex;
@@ -52,4 +52,12 @@ body {
     flex-wrap: wrap;
     grid-gap: 1em;
 
+}
+
+.book:nth-of-type(even) .book-cover {
+    background-color: lightblue;  
+}
+
+.book:nth-of-type(even) .book-spine {
+    background-color: #E1B07E;  
 }

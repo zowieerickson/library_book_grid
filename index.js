@@ -8,7 +8,7 @@ function displayBooksHtml(book) {
     return `
     <div class="book">
         <div class="book-spine"></div>
-        <div class="book-title">${book.title}</div>
+        <div class="book-cover">${book.title}</div>
         <div class="book-footer"></div>
     </div>
 
