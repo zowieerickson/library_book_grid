@@ -1,3 +1,55 @@
 body {
-    background: red;
+    margin: 0;
+    padding: 0;
+    background-color: lightyellow;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1rem 8rem;
+    grid-template-areas: 
+    "spine title"
+    "footer footer";
+}
+
+.book div {
+    border: 0.1rem solid black;
+}
+
+.book-title {
+    grid-area: title;
+    background-color: lightgreen;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    padding: 1em;
+}
+
+.book-spine {
+    grid-area: spine;
+    background-color: #4A4238;
+    border-top-left-radius: 5px;
+
+}
+
+.book-footer {
+    grid-area: footer;
+    background-color: lightgray;
+    height: .5em;
+    border-bottom-left-radius: 5px;
+
+    
+}
+
+.books-container {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+
 }
